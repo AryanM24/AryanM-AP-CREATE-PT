@@ -254,7 +254,7 @@ if not st.session_state.quiz_completed:
 # Display quiz results if completed
 if st.session_state.quiz_completed:
   st.subheader("Recommended Majors Based on Your Answers")
-   recommended_majors = []
+  recommended_majors = []
   # get quiz results that we will use to find recomended majors
   salary_expectation = st.session_state.quiz_answers["Salary Expectations"]
   job_security = st.session_state.quiz_answers["Job Security Importance"]
