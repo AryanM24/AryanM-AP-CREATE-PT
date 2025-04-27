@@ -375,7 +375,7 @@ def show_median_earnings():
           if majors[x] == major:
               idx = int(ranks[x]) - 1
               median = medianEarnings[x]
-       st.info(f"The median earnings of an employed {major} graduate is ${median:,} annually.")
+      st.info(f"The median earnings of an employed {major} graduate is ${median:,} annually.")
 
 
       # Create empty lists for the bar chart
@@ -466,7 +466,7 @@ def show_unemployment():
       filtered_unemployment_rates=[]
       for x in unemployment_rates:
           filtered_unemployment_rates.append(round(x*100,2))
-       ax.hist(filtered_unemployment_rates, bins=20, color='teal', alpha=0.7, edgecolor='black')
+      ax.hist(filtered_unemployment_rates, bins=20, color='teal', alpha=0.7, edgecolor='black')
       plt.xlabel('Unemployment Rate (%)')
       plt.ylabel('Number of Majors')
       plt.title('Distribution of Unemployment Rates Across All College Majors', fontsize=14)
